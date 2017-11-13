@@ -21,8 +21,8 @@ describe 'navigate' do
     # end
 
     xit 'has a list of posts' do
-      post1 = Post.create(date: Date.today, rationale: "Post1")
-      post2 = Post.create(date: Date.today, rationale: "Post2")
+      post1 = Post.create(date: Date.today, rationale: "Post1", user: @user)
+      post2 = Post.create(date: Date.today, rationale: "Post2", user: @user)
       visit posts_path
       expect(page).to have_content(/Post1|Post2/)
     end
