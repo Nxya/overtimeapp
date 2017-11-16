@@ -19,6 +19,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7', '>= 3.7.1'
   gem 'capybara', '~> 2.15', '>= 2.15.4'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2'
+  gem 'factory_girl_rails', '~> 4.9'
 end
 
 group :development do
@@ -33,3 +34,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '~> 4.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'gritter', '~> 1.2'
