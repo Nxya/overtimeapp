@@ -20,6 +20,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    authorize @post
     if @post.update(post_params)
       redirect_to @post, notice: 'Your post was successfully updated'
     else
@@ -34,6 +35,10 @@ class PostsController < ApplicationController
 
   def show
     
+  end
+
+  def edit
+    authorize @post
   end
 
   private
